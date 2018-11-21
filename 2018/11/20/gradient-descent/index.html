@@ -142,7 +142,7 @@
 <meta property="og:site_name" content="破晓狂客">
 <meta property="og:description" content="(一) 引言 试想，某人在山顶，并且四周全是雾（霾）完全无法辨别方向，该怎么以最快速度下山呢？对喽，就是沿着坡度最陡的方向下山。但是，哪里又是坡度最陡的路线呢？在伸手不见五指的情况下只能把四面八方都测量一遍，找出最陡峭的方向，就这样走一步测一遍就可以很快下山了，当然这样走下去，有可能我们不能走到山脚，而是到了某一个局部的山峰低处。  (二) 梯度 梯度的本意是一个向量（矢量），表示某一函数在该">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-21T17:26:26.088Z">
+<meta property="og:updated_time" content="2018-11-21T17:31:05.305Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="梯度下降法总结">
 <meta name="twitter:description" content="(一) 引言 试想，某人在山顶，并且四周全是雾（霾）完全无法辨别方向，该怎么以最快速度下山呢？对喽，就是沿着坡度最陡的方向下山。但是，哪里又是坡度最陡的路线呢？在伸手不见五指的情况下只能把四面八方都测量一遍，找出最陡峭的方向，就这样走一步测一遍就可以很快下山了，当然这样走下去，有可能我们不能走到山脚，而是到了某一个局部的山峰低处。  (二) 梯度 梯度的本意是一个向量（矢量），表示某一函数在该">
@@ -517,7 +517,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-22 01:26:26" itemprop="dateModified" datetime="2018-11-22T01:26:26+08:00">2018-11-22</time>
+                <time title="修改时间：2018-11-22 01:31:05" itemprop="dateModified" datetime="2018-11-22T01:31:05+08:00">2018-11-22</time>
               
             
           </span>
@@ -623,7 +623,7 @@
 </blockquote>
 <h3 id="4-小批量梯度下降法-MBGD-Mini-batch-Gradient-Descent"><a href="#4-小批量梯度下降法-MBGD-Mini-batch-Gradient-Descent" class="headerlink" title="4. 小批量梯度下降法 [MBGD: Mini-batch Gradient Descent]"></a>4. 小批量梯度下降法 [MBGD: Mini-batch Gradient Descent]</h3><blockquote>
 <p>小批量梯度下降法是批量梯度下降法和随机梯度下降法的折衷，也就是对于m个样本，我们采用x个样子来迭代，1&lt;x&lt;m。一般可以取x=10，当然根据样本的数据，可以调整这个x的值。对应的更新公式是：        </p>
-<p>\(\theta _{i}=\theta _{i}-\alpha \sum_{j=t}^{t+x-1}\left ( h_{\theta }\left (  x_{0}^{\left ( j \right )},  x_{1}^{\left ( j \right )}, …, x_{n}^{\left ( j \right )} \right )-y_{j}  \right ) \right )x_{i}^{\left ( j \right )}\)</p>
+<p>\(\theta_{i}=\theta_{i}-\alpha\sum_{j=t}^{t+x-1}\left (h_{\theta}\left(x_{0}^{\left(j\right)}, x_{1}^{\left(j\right)}, …, x_{n}^{\left(j\right)}\right)-y_{j}\right)\right)x_{i}^{\left(j\right)}\)</p>
 </blockquote>
 <h2 id="八-梯度下降法-vs-其他无约束优化算法"><a href="#八-梯度下降法-vs-其他无约束优化算法" class="headerlink" title="(八) 梯度下降法 vs 其他无约束优化算法"></a>(八) 梯度下降法 vs 其他无约束优化算法</h2><blockquote>
 <p>梯度下降法和最小二乘法相比，梯度下降法需要选择步长，而最小二乘法不需要。梯度下降法是迭代求解，最小二乘法是计算解析解。如果样本量不算很大，且存在解析解，最小二乘法比起梯度下降法要有优势，计算速度很快。但是如果样本量很大，用最小二乘法由于需要求一个超级大的逆矩阵，这时就很难或者很慢才能求解解析解了，使用迭代的梯度下降法比较有优势。<br>梯度下降法和牛顿法/拟牛顿法相比，两者都是迭代求解，不过梯度下降法是梯度求解，而牛顿法/拟牛顿法是用二阶的海森矩阵的逆矩阵或伪逆矩阵求解。相对而言，使用牛顿法/拟牛顿法收敛更快。但是每次迭代的时间比梯度下降法长。</p>
