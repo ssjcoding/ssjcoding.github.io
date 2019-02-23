@@ -134,21 +134,25 @@
 
 
 
-  <meta name="keywords" content="大数据, 数据挖掘, 算法, java">
-<meta property="og:type" content="website">
-<meta property="og:title" content="破晓狂客">
-<meta property="og:url" content="http://yoursite.com/categories/基础算法/index.html">
+  <meta name="description" content="(一) 前言 朴素贝叶斯法是基于贝叶斯定理与特征条件独立假设的分类方法。采用统计学习中的三要素方法对朴素贝叶斯分类器进行分析，朴素贝叶斯分类基于朴素贝叶斯模型，通过期望风险最小化方法来选择最优化模型空间中的最优解，最后可以采用最大似然估计或者贝叶斯估计求解分类器。  (二) 核心依赖1. 贝叶斯公式2. 特征独立性(三) 贝叶斯分类的公式(四) 最优解求解过程1. 损失函数2. 最优解(五)">
+<meta name="keywords" content="分类算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="朴素贝叶斯分类法">
+<meta property="og:url" content="http://yoursite.com/2017/11/15/classifier-naive-bayes/index.html">
 <meta property="og:site_name" content="破晓狂客">
+<meta property="og:description" content="(一) 前言 朴素贝叶斯法是基于贝叶斯定理与特征条件独立假设的分类方法。采用统计学习中的三要素方法对朴素贝叶斯分类器进行分析，朴素贝叶斯分类基于朴素贝叶斯模型，通过期望风险最小化方法来选择最优化模型空间中的最优解，最后可以采用最大似然估计或者贝叶斯估计求解分类器。  (二) 核心依赖1. 贝叶斯公式2. 特征独立性(三) 贝叶斯分类的公式(四) 最优解求解过程1. 损失函数2. 最优解(五)">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-02-23T13:18:58.955Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="破晓狂客">
+<meta name="twitter:title" content="朴素贝叶斯分类法">
+<meta name="twitter:description" content="(一) 前言 朴素贝叶斯法是基于贝叶斯定理与特征条件独立假设的分类方法。采用统计学习中的三要素方法对朴素贝叶斯分类器进行分析，朴素贝叶斯分类基于朴素贝叶斯模型，通过期望风险最小化方法来选择最优化模型空间中的最优解，最后可以采用最大似然估计或者贝叶斯估计求解分类器。  (二) 核心依赖1. 贝叶斯公式2. 特征独立性(三) 贝叶斯分类的公式(四) 最优解求解过程1. 损失函数2. 最优解(五)">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/基础算法/">
+  <link rel="canonical" href="http://yoursite.com/2017/11/15/classifier-naive-bayes/">
 
 
 
@@ -158,7 +162,7 @@
   };
 </script>
 
-  <title>分类: 基础算法 | 破晓狂客</title>
+  <title>朴素贝叶斯分类法 | 破晓狂客</title>
   
 
 
@@ -207,7 +211,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -305,7 +309,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
 
     
     
@@ -434,118 +438,234 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>基础算法<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/15/classifier-naive-bayes/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tony">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="破晓狂客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/11/18/sort-insert/" itemprop="url">
-              
-                <span itemprop="name">插入排序</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">朴素贝叶斯分类法
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-18T23:12:07+08:00" content="2018-11-18">
-          11-18
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-11-15 17:43:12" itemprop="dateCreated datePublished" datetime="2017-11-15T17:43:12+08:00">2017-11-15</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-23 21:18:58" itemprop="dateModified" datetime="2019-02-23T21:18:58+08:00">2019-02-23</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/机器学习/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
+      
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/18/sort-binary-insert/" itemprop="url">
-              
-                <span itemprop="name">折半插入排序</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-18T23:11:55+08:00" content="2018-11-18">
-          11-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+<h2 id="一-前言"><a href="#一-前言" class="headerlink" title="(一) 前言"></a>(一) 前言</h2><blockquote>
+<p>朴素贝叶斯法是基于贝叶斯定理与特征条件独立假设的分类方法。采用统计学习中的三要素方法对朴素贝叶斯分类器进行分析，朴素贝叶斯分类基于朴素贝叶斯模型，通过期望风险最小化方法来选择最优化模型空间中的最优解，最后可以采用最大似然估计或者贝叶斯估计求解分类器。</p>
+</blockquote>
+<h2 id="二-核心依赖"><a href="#二-核心依赖" class="headerlink" title="(二) 核心依赖"></a>(二) 核心依赖</h2><h3 id="1-贝叶斯公式"><a href="#1-贝叶斯公式" class="headerlink" title="1. 贝叶斯公式"></a>1. 贝叶斯公式</h3><h3 id="2-特征独立性"><a href="#2-特征独立性" class="headerlink" title="2. 特征独立性"></a>2. 特征独立性</h3><h2 id="三-贝叶斯分类的公式"><a href="#三-贝叶斯分类的公式" class="headerlink" title="(三) 贝叶斯分类的公式"></a>(三) 贝叶斯分类的公式</h2><h2 id="四-最优解求解过程"><a href="#四-最优解求解过程" class="headerlink" title="(四) 最优解求解过程"></a>(四) 最优解求解过程</h2><h3 id="1-损失函数"><a href="#1-损失函数" class="headerlink" title="1. 损失函数"></a>1. 损失函数</h3><h3 id="2-最优解"><a href="#2-最优解" class="headerlink" title="2. 最优解"></a>2. 最优解</h3><h2 id="五-参数估计"><a href="#五-参数估计" class="headerlink" title="(五) 参数估计"></a>(五) 参数估计</h2><h3 id="1-极大似然估计求解法"><a href="#1-极大似然估计求解法" class="headerlink" title="1. 极大似然估计求解法"></a>1. 极大似然估计求解法</h3><h3 id="2-贝叶斯估计求解法"><a href="#2-贝叶斯估计求解法" class="headerlink" title="2. 贝叶斯估计求解法"></a>2. 贝叶斯估计求解法</h3><hr>
+<p>参考博客</p>
+<blockquote>
+<p>《统计学习方法》    李航</p>
+<p><a href="https://blog.csdn.net/zhengjihao/article/details/78064121" title="朴素贝叶斯 后验概率最大化的含义" target="_blank" rel="noopener">朴素贝叶斯 后验概率最大化的含义</a></p>
+</blockquote>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+<div>
+  
+    <div>
+    
+	<div style="text-align:center;color: #ccc;font-size:14px;">-------------本文为博主原创文章，如需转载请注明出处 [https://ssjcoding.github.io]">-------------</div>	
+    
+</div>
+
+  
+</div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/分类算法/" rel="tag"># 分类算法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/18/sort-binary-insert/" rel="prev" title="折半插入排序">
+                折半插入排序 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -566,8 +686,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -680,6 +809,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-前言"><span class="nav-text">(一) 前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-核心依赖"><span class="nav-text">(二) 核心依赖</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-贝叶斯公式"><span class="nav-text">1. 贝叶斯公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-特征独立性"><span class="nav-text">2. 特征独立性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-贝叶斯分类的公式"><span class="nav-text">(三) 贝叶斯分类的公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-最优解求解过程"><span class="nav-text">(四) 最优解求解过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-损失函数"><span class="nav-text">1. 损失函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-最优解"><span class="nav-text">2. 最优解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五-参数估计"><span class="nav-text">(五) 参数估计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-极大似然估计求解法"><span class="nav-text">1. 极大似然估计求解法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-贝叶斯估计求解法"><span class="nav-text">2. 贝叶斯估计求解法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -833,6 +978,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 
