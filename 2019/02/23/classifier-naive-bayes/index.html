@@ -142,10 +142,12 @@
 <meta property="og:site_name" content="破晓狂客">
 <meta property="og:description" content="(一) 前言 朴素贝叶斯法是基于贝叶斯定理与特征条件独立假设的分类方法。采用统计学习中的三要素方法对朴素贝叶斯分类器进行分析，朴素贝叶斯分类基于朴素贝叶斯模型，通过期望风险最小化方法来选择最优化模型空间中的最优解，最后可以采用最大似然估计或者贝叶斯估计求解分类器。  (二) 核心依赖1. 贝叶斯公式 贝叶斯公式如下： \(P\left ( Y=c_{k}|X=x \right )=\frac{">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-27T10:40:44.175Z">
+<meta property="og:image" content="http://yoursite.com/images/classifier-naive-bayes/loss(0-1">
+<meta property="og:updated_time" content="2019-02-27T14:42:17.865Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="朴素贝叶斯分类法">
 <meta name="twitter:description" content="(一) 前言 朴素贝叶斯法是基于贝叶斯定理与特征条件独立假设的分类方法。采用统计学习中的三要素方法对朴素贝叶斯分类器进行分析，朴素贝叶斯分类基于朴素贝叶斯模型，通过期望风险最小化方法来选择最优化模型空间中的最优解，最后可以采用最大似然估计或者贝叶斯估计求解分类器。  (二) 核心依赖1. 贝叶斯公式 贝叶斯公式如下： \(P\left ( Y=c_{k}|X=x \right )=\frac{">
+<meta name="twitter:image" content="http://yoursite.com/images/classifier-naive-bayes/loss(0-1">
 
 
 
@@ -517,7 +519,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-27 18:40:44" itemprop="dateModified" datetime="2019-02-27T18:40:44+08:00">2019-02-27</time>
+                <time title="修改时间：2019-02-27 22:42:17" itemprop="dateModified" datetime="2019-02-27T22:42:17+08:00">2019-02-27</time>
               
             
           </span>
@@ -588,12 +590,22 @@
 <p>贝叶斯法则另一特点就是假设特征之间不具有依赖性，虽然此假设有时并不合理（比如自然语言处理中假设文章中词与词之间的出现是不具有依赖性的），但是可以大大降低计算复杂度，所以这是一个非常强的假设。根据此假设与事件的的条件独立性可以得到如下公式：</p>
 <p>\(P\left ( X=x|Y=c_{k} \right )=P\left ( X^{\left ( 1 \right )}=x^{\left ( 1 \right )}, X^{\left ( 2 \right )}=x^{\left ( 2 \right )},…, X^{\left ( n \right )}=x^{\left ( n \right )} |Y=c_{k}\right )=\prod_{i=1}^{n}P\left ( X^{\left ( i \right )}=x^{\left ( i \right )}|Y=c_{k} \right )\)        (公式2)</p>
 </blockquote>
-<h3 id="3-贝叶斯法则所符合公式"><a href="#3-贝叶斯法则所符合公式" class="headerlink" title="3. 贝叶斯法则所符合公式"></a>3. 贝叶斯法则所符合公式</h3><blockquote>
+<h3 id="3-朴素贝叶斯法则所符合公式"><a href="#3-朴素贝叶斯法则所符合公式" class="headerlink" title="3. 朴素贝叶斯法则所符合公式"></a>3. 朴素贝叶斯法则所符合公式</h3><blockquote>
 <p>将特征独立性公式带入贝叶斯公式，可得到贝叶斯法则符合以下公式：</p>
 <p>\(P\left ( Y=c_{k}|X=x \right ) = \frac{P\left ( Y=c_{k}\right )\prod_{i=1}^{n} P\left ( X^{\left ( i \right )}=x^{\left ( i \right )}|Y=c_{k} \right )}{\sum_{k=1}^{K}P\left ( Y=c_{k}\right )\prod_{i=1}^{n} P\left ( X^{\left ( i \right )}=x^{\left ( i \right )}|Y=c_{k} \right )}\)        (公式3)</p>
 </blockquote>
-<h2 id="三-最优解推导过程"><a href="#三-最优解推导过程" class="headerlink" title="(三) 最优解推导过程"></a>(三) 最优解推导过程</h2><h3 id="1-损失函数"><a href="#1-损失函数" class="headerlink" title="1. 损失函数"></a>1. 损失函数</h3><h3 id="2-期望风险最小化"><a href="#2-期望风险最小化" class="headerlink" title="2. 期望风险最小化"></a>2. 期望风险最小化</h3><h2 id="四-贝叶斯分类的公式"><a href="#四-贝叶斯分类的公式" class="headerlink" title="(四) 贝叶斯分类的公式"></a>(四) 贝叶斯分类的公式</h2><h2 id="五-参数估计"><a href="#五-参数估计" class="headerlink" title="(五) 参数估计"></a>(五) 参数估计</h2><h3 id="1-极大似然估计求解法"><a href="#1-极大似然估计求解法" class="headerlink" title="1. 极大似然估计求解法"></a>1. 极大似然估计求解法</h3><h3 id="2-贝叶斯估计求解法"><a href="#2-贝叶斯估计求解法" class="headerlink" title="2. 贝叶斯估计求解法"></a>2. 贝叶斯估计求解法</h3><p>零概率处理方式</p>
-<h2 id="六-三种常用模型"><a href="#六-三种常用模型" class="headerlink" title="(六) 三种常用模型"></a>(六) 三种常用模型</h2><h3 id="1-模型选择依据"><a href="#1-模型选择依据" class="headerlink" title="1.模型选择依据"></a>1.模型选择依据</h3><blockquote>
+<h2 id="三-最优解推导过程"><a href="#三-最优解推导过程" class="headerlink" title="(三) 最优解推导过程"></a>(三) 最优解推导过程</h2><blockquote>
+<p>我们已经得到了贝叶斯法的假设空间（公式3），但是我们怎么获取最优解呢，机器学习一般步骤是：设计损失函数，然后求最小化损失，此时就可以得到最优解，下面我们将进行逐步的推导求解。</p>
+</blockquote>
+<h3 id="1-损失函数"><a href="#1-损失函数" class="headerlink" title="1. 损失函数"></a>1. 损失函数</h3><blockquote>
+<p>我们选取0-1损失函数作为本次的损失函数，公式如下：</p>
+<p><img src="/images/classifier-naive-bayes/loss(0-1" alt="0-1损失函数">.png  “0-1损失函数”)</p>
+<p>可以看出，该损失函数的意义就是，当预测错误时，损失函数值为1，预测正确时，损失函数值为0。该损失函数不考虑预测值和真实值的误差程度，也就是只要预测错误，预测错误差一点和差很多是一样的。</p>
+</blockquote>
+<h3 id="2-期望风险最小化"><a href="#2-期望风险最小化" class="headerlink" title="2. 期望风险最小化"></a>2. 期望风险最小化</h3><h2 id="四-朴素贝叶斯分类算法"><a href="#四-朴素贝叶斯分类算法" class="headerlink" title="(四) 朴素贝叶斯分类算法"></a>(四) 朴素贝叶斯分类算法</h2><h3 id="1-类别选择依据"><a href="#1-类别选择依据" class="headerlink" title="1. 类别选择依据"></a>1. 类别选择依据</h3><h3 id="2-学习与分类算法"><a href="#2-学习与分类算法" class="headerlink" title="2. 学习与分类算法"></a>2. 学习与分类算法</h3><h2 id="五-参数估计"><a href="#五-参数估计" class="headerlink" title="(五) 参数估计"></a>(五) 参数估计</h2><h3 id="1-极大似然估计求解法"><a href="#1-极大似然估计求解法" class="headerlink" title="1. 极大似然估计求解法"></a>1. 极大似然估计求解法</h3><p>&gt;</p>
+<h3 id="2-贝叶斯估计求解法"><a href="#2-贝叶斯估计求解法" class="headerlink" title="2. 贝叶斯估计求解法"></a>2. 贝叶斯估计求解法</h3><p>&gt;</p>
+<p>零概率处理方式</p>
+<h2 id="六-三种常用模型"><a href="#六-三种常用模型" class="headerlink" title="(六) 三种常用模型"></a>(六) 三种常用模型</h2><h3 id="1-模型选择依据"><a href="#1-模型选择依据" class="headerlink" title="1. 模型选择依据"></a>1. 模型选择依据</h3><blockquote>
 <p>模型的选择主要是根据训练数据特征来定，比如当特征为离散型的时候可以选择多项式模型；当特征为连续型数据的时候运用多项式模型就会导致很多P(xi|yk)=0（不做平滑的情况下），此时即使做平滑，所得到的条件概率也难以描述真实情况。所以处理连续的特征变量，应该采用高斯模型；伯努利模型适用于数据中每个特征的取值只能是1和0(以文本分类为例，某个单词在文档中出现过，则其特征值为1，否则为0)</p>
 </blockquote>
 <h3 id="2-Multinomial-Naive-Bayes-多项式朴素贝叶斯"><a href="#2-Multinomial-Naive-Bayes-多项式朴素贝叶斯" class="headerlink" title="2. Multinomial Naive Bayes[多项式朴素贝叶斯]"></a>2. Multinomial Naive Bayes[多项式朴素贝叶斯]</h3><h3 id="3-Gaussian-Naive-Bayes-高斯朴素贝叶斯"><a href="#3-Gaussian-Naive-Bayes-高斯朴素贝叶斯" class="headerlink" title="3. Gaussian Naive Bayes[高斯朴素贝叶斯]"></a>3. Gaussian Naive Bayes[高斯朴素贝叶斯]</h3><h3 id="4-Bernoulli-Naive-Bayes-伯努利朴素贝叶斯"><a href="#4-Bernoulli-Naive-Bayes-伯努利朴素贝叶斯" class="headerlink" title="4. Bernoulli Naive Bayes[伯努利朴素贝叶斯]"></a>4. Bernoulli Naive Bayes[伯努利朴素贝叶斯]</h3><hr>
@@ -837,7 +849,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-前言"><span class="nav-text">(一) 前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-核心依赖"><span class="nav-text">(二) 核心依赖</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-贝叶斯公式"><span class="nav-text">1. 贝叶斯公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-特征独立性假设"><span class="nav-text">2. 特征独立性假设</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-贝叶斯法则所符合公式"><span class="nav-text">3. 贝叶斯法则所符合公式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-最优解推导过程"><span class="nav-text">(三) 最优解推导过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-损失函数"><span class="nav-text">1. 损失函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-期望风险最小化"><span class="nav-text">2. 期望风险最小化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-贝叶斯分类的公式"><span class="nav-text">(四) 贝叶斯分类的公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五-参数估计"><span class="nav-text">(五) 参数估计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-极大似然估计求解法"><span class="nav-text">1. 极大似然估计求解法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-贝叶斯估计求解法"><span class="nav-text">2. 贝叶斯估计求解法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六-三种常用模型"><span class="nav-text">(六) 三种常用模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-模型选择依据"><span class="nav-text">1.模型选择依据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Multinomial-Naive-Bayes-多项式朴素贝叶斯"><span class="nav-text">2. Multinomial Naive Bayes[多项式朴素贝叶斯]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Gaussian-Naive-Bayes-高斯朴素贝叶斯"><span class="nav-text">3. Gaussian Naive Bayes[高斯朴素贝叶斯]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Bernoulli-Naive-Bayes-伯努利朴素贝叶斯"><span class="nav-text">4. Bernoulli Naive Bayes[伯努利朴素贝叶斯]</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-前言"><span class="nav-text">(一) 前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-核心依赖"><span class="nav-text">(二) 核心依赖</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-贝叶斯公式"><span class="nav-text">1. 贝叶斯公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-特征独立性假设"><span class="nav-text">2. 特征独立性假设</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-朴素贝叶斯法则所符合公式"><span class="nav-text">3. 朴素贝叶斯法则所符合公式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-最优解推导过程"><span class="nav-text">(三) 最优解推导过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-损失函数"><span class="nav-text">1. 损失函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-期望风险最小化"><span class="nav-text">2. 期望风险最小化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-朴素贝叶斯分类算法"><span class="nav-text">(四) 朴素贝叶斯分类算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-类别选择依据"><span class="nav-text">1. 类别选择依据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-学习与分类算法"><span class="nav-text">2. 学习与分类算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五-参数估计"><span class="nav-text">(五) 参数估计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-极大似然估计求解法"><span class="nav-text">1. 极大似然估计求解法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-贝叶斯估计求解法"><span class="nav-text">2. 贝叶斯估计求解法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六-三种常用模型"><span class="nav-text">(六) 三种常用模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-模型选择依据"><span class="nav-text">1. 模型选择依据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Multinomial-Naive-Bayes-多项式朴素贝叶斯"><span class="nav-text">2. Multinomial Naive Bayes[多项式朴素贝叶斯]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Gaussian-Naive-Bayes-高斯朴素贝叶斯"><span class="nav-text">3. Gaussian Naive Bayes[高斯朴素贝叶斯]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Bernoulli-Naive-Bayes-伯努利朴素贝叶斯"><span class="nav-text">4. Bernoulli Naive Bayes[伯努利朴素贝叶斯]</span></a></li></ol></li></ol></div>
             
 
           </div>
