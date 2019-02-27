@@ -143,7 +143,7 @@
 <meta property="og:description" content="(一) 前言 朴素贝叶斯法是基于贝叶斯定理与特征条件独立假设的分类方法。采用统计学习中的三要素方法对朴素贝叶斯分类器进行分析，朴素贝叶斯分类基于朴素贝叶斯模型，通过期望风险最小化方法来选择最优化模型空间中的最优解，最后可以采用最大似然估计或者贝叶斯估计求解分类器。  (二) 核心依赖1. 贝叶斯公式 贝叶斯公式如下： \(P\left ( Y=c_{k}|X=x \right )=\frac{">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/classifier-naive-bayes/loss(0-1">
-<meta property="og:updated_time" content="2019-02-27T14:42:17.865Z">
+<meta property="og:updated_time" content="2019-02-27T14:45:27.178Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="朴素贝叶斯分类法">
 <meta name="twitter:description" content="(一) 前言 朴素贝叶斯法是基于贝叶斯定理与特征条件独立假设的分类方法。采用统计学习中的三要素方法对朴素贝叶斯分类器进行分析，朴素贝叶斯分类基于朴素贝叶斯模型，通过期望风险最小化方法来选择最优化模型空间中的最优解，最后可以采用最大似然估计或者贝叶斯估计求解分类器。  (二) 核心依赖1. 贝叶斯公式 贝叶斯公式如下： \(P\left ( Y=c_{k}|X=x \right )=\frac{">
@@ -519,7 +519,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-27 22:42:17" itemprop="dateModified" datetime="2019-02-27T22:42:17+08:00">2019-02-27</time>
+                <time title="修改时间：2019-02-27 22:45:27" itemprop="dateModified" datetime="2019-02-27T22:45:27+08:00">2019-02-27</time>
               
             
           </span>
@@ -598,7 +598,7 @@
 <p>我们已经得到了贝叶斯法的假设空间（公式3），但是我们怎么获取最优解呢，机器学习一般步骤是：设计损失函数，然后求最小化损失，此时就可以得到最优解，下面我们将进行逐步的推导求解。</p>
 </blockquote>
 <h3 id="1-损失函数"><a href="#1-损失函数" class="headerlink" title="1. 损失函数"></a>1. 损失函数</h3><blockquote>
-<p>我们选取0-1损失函数作为本次的损失函数，公式如下：</p>
+<p>我们选取0-1损失函数作为本次选取最优化解的损失函数，公式如下：</p>
 <p><img src="/images/classifier-naive-bayes/loss(0-1" alt="0-1损失函数">.png  “0-1损失函数”)</p>
 <p>可以看出，该损失函数的意义就是，当预测错误时，损失函数值为1，预测正确时，损失函数值为0。该损失函数不考虑预测值和真实值的误差程度，也就是只要预测错误，预测错误差一点和差很多是一样的。</p>
 </blockquote>
