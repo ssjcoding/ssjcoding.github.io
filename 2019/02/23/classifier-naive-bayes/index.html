@@ -145,7 +145,7 @@
 <meta property="og:image" content="http://yoursite.com/images/classifier-naive-bayes/loss0-1.png">
 <meta property="og:image" content="http://yoursite.com/images/classifier-naive-bayes/rexp_01.png">
 <meta property="og:image" content="http://yoursite.com/images/classifier-naive-bayes/rexp_min.png">
-<meta property="og:updated_time" content="2019-02-27T16:20:46.820Z">
+<meta property="og:updated_time" content="2019-02-27T16:28:58.542Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="朴素贝叶斯分类法">
 <meta name="twitter:description" content="(一) 前言 朴素贝叶斯法是基于贝叶斯定理与特征条件独立假设的分类方法。采用统计学习中的三要素方法对朴素贝叶斯分类器进行分析，朴素贝叶斯分类基于朴素贝叶斯模型，通过期望风险最小化方法来选择最优化模型空间中的最优解，最后可以采用最大似然估计或者贝叶斯估计求解分类器。  (二) 核心依赖1. 贝叶斯公式 贝叶斯公式如下： \(P\left ( Y=c_{k}|X=x \right )=\frac{">
@@ -521,7 +521,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-28 00:20:46" itemprop="dateModified" datetime="2019-02-28T00:20:46+08:00">2019-02-28</time>
+                <time title="修改时间：2019-02-28 00:28:58" itemprop="dateModified" datetime="2019-02-28T00:28:58+08:00">2019-02-28</time>
               
             
           </span>
@@ -618,7 +618,7 @@
 <p>\(y=argmax_{c_{k}}\frac{\mathrm{d} }{\mathrm{d} x}P\left ( Y=c_{k} \right )\prod_{j=1}^{n}P\left ( X^{\left ( j \right )}=x^{\left ( j \right )}|Y=c_{k} \right )\) <strong>（公式4）</strong></p>
 </blockquote>
 <h3 id="2-学习与分类算法步骤"><a href="#2-学习与分类算法步骤" class="headerlink" title="2. 学习与分类算法步骤"></a>2. 学习与分类算法步骤</h3><blockquote>
-<p>（1）计算先验概率\(P\left ( Y=c_{k} \right )\)与条件概</p>
+<p>（1）计算先验概率\(P\left ( Y=c_{k} \right )\)与条件概率\(P\left ( X^{\left(j\right)}=a_{jl}|Y=c_{k} \right )\)</p>
 <p>（2）对于给定的实例\(x=\left ( x^{1},x^{2},…,x^{n} \right )^{T}\)，计算</p>
 <p>\(P\left ( Y=c_{k} \right )\prod_{j=1}^{n}P\left ( X^{\left ( j \right )}=x^{\left ( j \right )}|Y=c_{k} \right ), k=1,2,…,k\)</p>
 <p>（3）根据公式4确定实例x的类</p>
