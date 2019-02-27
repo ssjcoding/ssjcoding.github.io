@@ -145,7 +145,7 @@
 <meta property="og:image" content="http://yoursite.com/images/classifier-naive-bayes/loss0-1.png">
 <meta property="og:image" content="http://yoursite.com/images/classifier-naive-bayes/rexp_01.png">
 <meta property="og:image" content="http://yoursite.com/images/classifier-naive-bayes/rexp_min.png">
-<meta property="og:updated_time" content="2019-02-27T16:17:25.061Z">
+<meta property="og:updated_time" content="2019-02-27T16:20:46.820Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="朴素贝叶斯分类法">
 <meta name="twitter:description" content="(一) 前言 朴素贝叶斯法是基于贝叶斯定理与特征条件独立假设的分类方法。采用统计学习中的三要素方法对朴素贝叶斯分类器进行分析，朴素贝叶斯分类基于朴素贝叶斯模型，通过期望风险最小化方法来选择最优化模型空间中的最优解，最后可以采用最大似然估计或者贝叶斯估计求解分类器。  (二) 核心依赖1. 贝叶斯公式 贝叶斯公式如下： \(P\left ( Y=c_{k}|X=x \right )=\frac{">
@@ -521,7 +521,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-28 00:17:25" itemprop="dateModified" datetime="2019-02-28T00:17:25+08:00">2019-02-28</time>
+                <time title="修改时间：2019-02-28 00:20:46" itemprop="dateModified" datetime="2019-02-28T00:20:46+08:00">2019-02-28</time>
               
             
           </span>
@@ -586,15 +586,15 @@
 </blockquote>
 <h2 id="二-核心依赖"><a href="#二-核心依赖" class="headerlink" title="(二) 核心依赖"></a>(二) 核心依赖</h2><h3 id="1-贝叶斯公式"><a href="#1-贝叶斯公式" class="headerlink" title="1. 贝叶斯公式"></a>1. 贝叶斯公式</h3><blockquote>
 <p>贝叶斯公式如下：</p>
-<p>\(P\left ( Y=c_{k}|X=x \right )=\frac{P\left (  Y=c_{k} \right )P\left ( X=x| Y=c_{k} \right )}{ \sum_{k=1}^{K} P\left (  Y=c_{k} \right )P\left ( X=x| Y=c_{k} \right )}\)        (公式1)</p>
+<p>\(P\left ( Y=c_{k}|X=x \right )=\frac{P\left (  Y=c_{k} \right )P\left ( X=x| Y=c_{k} \right )}{ \sum_{k=1}^{K} P\left (  Y=c_{k} \right )P\left ( X=x| Y=c_{k} \right )}\)        <strong>(公式1)</strong></p>
 </blockquote>
 <h3 id="2-特征独立性假设"><a href="#2-特征独立性假设" class="headerlink" title="2. 特征独立性假设"></a>2. 特征独立性假设</h3><blockquote>
 <p>贝叶斯法则另一特点就是假设特征之间不具有依赖性，虽然此假设有时并不合理（比如自然语言处理中假设文章中词与词之间的出现是不具有依赖性的），但是可以大大降低计算复杂度，所以这是一个非常强的假设。根据此假设与事件的的条件独立性可以得到如下公式：</p>
-<p>\(P\left ( X=x|Y=c_{k} \right )=P\left ( X^{\left ( 1 \right )}=x^{\left ( 1 \right )}, X^{\left ( 2 \right )}=x^{\left ( 2 \right )},…, X^{\left ( n \right )}=x^{\left ( n \right )} |Y=c_{k}\right )=\prod_{i=1}^{n}P\left ( X^{\left ( i \right )}=x^{\left ( i \right )}|Y=c_{k} \right )\)        (公式2)</p>
+<p>\(P\left ( X=x|Y=c_{k} \right )=P\left ( X^{\left ( 1 \right )}=x^{\left ( 1 \right )}, X^{\left ( 2 \right )}=x^{\left ( 2 \right )},…, X^{\left ( n \right )}=x^{\left ( n \right )} |Y=c_{k}\right )=\prod_{i=1}^{n}P\left ( X^{\left ( i \right )}=x^{\left ( i \right )}|Y=c_{k} \right )\)        <strong>(公式2)</strong></p>
 </blockquote>
 <h3 id="3-朴素贝叶斯法则所符合公式"><a href="#3-朴素贝叶斯法则所符合公式" class="headerlink" title="3. 朴素贝叶斯法则所符合公式"></a>3. 朴素贝叶斯法则所符合公式</h3><blockquote>
 <p>将特征独立性公式带入贝叶斯公式，可得到贝叶斯法则符合以下公式：</p>
-<p>\(P\left ( Y=c_{k}|X=x \right ) = \frac{P\left ( Y=c_{k}\right )\prod_{i=1}^{n} P\left ( X^{\left ( i \right )}=x^{\left ( i \right )}|Y=c_{k} \right )}{\sum_{k=1}^{K}P\left ( Y=c_{k}\right )\prod_{i=1}^{n} P\left ( X^{\left ( i \right )}=x^{\left ( i \right )}|Y=c_{k} \right )}\)        (公式3)</p>
+<p>\(P\left ( Y=c_{k}|X=x \right ) = \frac{P\left ( Y=c_{k}\right )\prod_{i=1}^{n} P\left ( X^{\left ( i \right )}=x^{\left ( i \right )}|Y=c_{k} \right )}{\sum_{k=1}^{K}P\left ( Y=c_{k}\right )\prod_{i=1}^{n} P\left ( X^{\left ( i \right )}=x^{\left ( i \right )}|Y=c_{k} \right )}\)        <strong>(公式3)</strong></p>
 </blockquote>
 <h2 id="三-最优解推导过程"><a href="#三-最优解推导过程" class="headerlink" title="(三) 最优解推导过程"></a>(三) 最优解推导过程</h2><blockquote>
 <p>我们已经得到了贝叶斯法的假设空间（公式3），但是我们怎么获取最优解呢，机器学习一般步骤是：设计损失函数，然后求最小化损失，此时就可以得到最优解，下面我们将进行逐步的推导求解。</p>
@@ -615,7 +615,7 @@
 </blockquote>
 <h2 id="四-朴素贝叶斯分类算法"><a href="#四-朴素贝叶斯分类算法" class="headerlink" title="(四) 朴素贝叶斯分类算法"></a>(四) 朴素贝叶斯分类算法</h2><h3 id="1-类别选择依据"><a href="#1-类别选择依据" class="headerlink" title="1. 类别选择依据"></a>1. 类别选择依据</h3><blockquote>
 <p>根据后验概率最大化准则，我们只需要选择当前数据最大概率的分类就是最优结果。并且在公式3中分母针对任何ck都具有相同的值，所以分类公式为：</p>
-<p>\(y=argmax_{c_{k}}\frac{\mathrm{d} }{\mathrm{d} x}P\left ( Y=c_{k} \right )\prod_{j=1}^{n}P\left ( X^{\left ( j \right )}=x^{\left ( j \right )}|Y=c_{k} \right )\)（公式4）</p>
+<p>\(y=argmax_{c_{k}}\frac{\mathrm{d} }{\mathrm{d} x}P\left ( Y=c_{k} \right )\prod_{j=1}^{n}P\left ( X^{\left ( j \right )}=x^{\left ( j \right )}|Y=c_{k} \right )\) <strong>（公式4）</strong></p>
 </blockquote>
 <h3 id="2-学习与分类算法步骤"><a href="#2-学习与分类算法步骤" class="headerlink" title="2. 学习与分类算法步骤"></a>2. 学习与分类算法步骤</h3><blockquote>
 <p>（1）计算先验概率\(P\left ( Y=c_{k} \right )\)与条件概</p>
