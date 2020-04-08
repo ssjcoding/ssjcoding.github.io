@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.ssjcoding.cn/2020/04/04/word2vec-skipgram/</loc>
+    <lastmod>2020-04-05</lastmod>
+  </url>  <url>
+    <loc>http://www.ssjcoding.cn/2018/11/20/gradient-descent/</loc>
+    <lastmod>2020-04-04</lastmod>
+  </url>  <url>
     <loc>http://www.ssjcoding.cn/2019/02/23/classifier-naive-bayes/</loc>
     <lastmod>2019-10-12</lastmod>
   </url>  <url>
@@ -9,9 +15,6 @@
   </url>  <url>
     <loc>http://www.ssjcoding.cn/2019/03/27/normalization-and-standardization/</loc>
     <lastmod>2019-03-30</lastmod>
-  </url>  <url>
-    <loc>http://www.ssjcoding.cn/2018/11/20/gradient-descent/</loc>
-    <lastmod>2018-11-22</lastmod>
   </url>  <url>
     <loc>http://www.ssjcoding.cn/2018/11/18/sort-insert/</loc>
     <lastmod>2018-11-18</lastmod>

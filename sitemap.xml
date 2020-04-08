@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ssjcoding.github.io/2020/04/04/word2vec-skipgram/</loc>
+    
+    <lastmod>2020-04-05T02:19:35.577Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ssjcoding.github.io/2018/11/20/gradient-descent/</loc>
+    
+    <lastmod>2020-04-04T12:52:17.701Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ssjcoding.github.io/2019/02/23/classifier-naive-bayes/</loc>
     
     <lastmod>2019-10-12T03:08:04.870Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>https://ssjcoding.github.io/2019/03/27/normalization-and-standardization/</loc>
     
     <lastmod>2019-03-30T18:31:15.730Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ssjcoding.github.io/2018/11/20/gradient-descent/</loc>
-    
-    <lastmod>2018-11-22T17:31:40.690Z</lastmod>
     
   </url>
   
